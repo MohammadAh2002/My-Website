@@ -16,7 +16,7 @@ export const profile = {
   email: "mohammadahmadwork@gmail.com",
   phone: "+972 0543812415",
   location: "Jerusalem",
-  resumeUrl: "/Mohammad%20Ahmad.pdf",
+  resumeUrl: "./Mohammad%20Ahmad.pdf",
   socials: {
     linkedin: "https://www.linkedin.com/in/mohammadah2002/",
     github: "https://github.com/MohammadAh2002",
@@ -304,7 +304,7 @@ export const workProjects = [
   {
     id: "clinic-management-system",
     title: "Clinic Management System",
-    image: "/Images/clinic-management-system.png",
+    image: "./Images/clinic-management-system.png",
     client: "Healthcare Client",
     period: "2026",
     shortDescription:
@@ -346,7 +346,7 @@ export const workProjects = [
   {
     id: "wellness-platform",
     title: "Wellness Platform Website",
-    image: "/Images/wellness-platform.png",
+    image: "./Images/wellness-platform.png",
     client: "Wellness Client",
     period: "2025",
     shortDescription:
@@ -493,7 +493,7 @@ export const articles = [
     title: "Are You a Robot!",
     excerpt: "Understanding CAPTCHA and modern bot detection techniques.",
     readTime: "5 min read",
-    image: "/Images/notrobot.webp",
+    image: "./Images/notrobot.webp",
     links: {
       linkedin: "https://www.linkedin.com/pulse/you-robot-mohammad-ahmad-dhshf/?trackingId=G7LZBQ0BScqA83ZgTf6WzA%3D%3D",
       medium: "https://medium.com/@MohammadAh2002/are-you-a-robot-278dbf7b198e",
@@ -504,7 +504,7 @@ export const articles = [
     title: "Where Do Deleted Files Go?",
     excerpt: "Understanding the Journey of Your Data After Deletion.",
     readTime: "7 min read",
-    image: "/Images/DeletedFiles.webp",
+    image: "./Images/DeletedFiles.webp",
     links: {
       linkedin: "https://www.linkedin.com/pulse/where-do-deleted-files-go-mohammad-ahmad-jqbqf/?trackingId=G7LZBQ0BScqA83ZgTf6WzA%3D%3D",
       medium: "https://medium.com/@MohammadAh2002/where-do-deleted-files-go-10dd7035e9a6",
@@ -515,7 +515,7 @@ export const articles = [
     title: "File Compression: The Art of Making Big Data Small",
     excerpt: "Exploring lossless and lossy compression techniques and their applications.",
     readTime: "5 min read",
-    image: "/Images/FilesComparestion.webp",
+    image: "./Images/FilesComparestion.webp",
     links: {
       linkedin: "https://www.linkedin.com/pulse/art-making-big-data-small-mohammad-ahmad-ody8f/?trackingId=G7LZBQ0BScqA83ZgTf6WzA%3D%3D",
       medium: "https://medium.com/@MohammadAh2002/file-compression-the-art-of-making-big-data-small-8b8b8b8b8b8b",
@@ -526,7 +526,7 @@ export const articles = [
     title: "The Refresh Button And Does It Really Speed Up Your Device",
     excerpt: "Exploring the myth and reality behind the refresh button.",
     readTime: "4 min read",
-    image: "/Images/refresh.webp",
+    image: "./Images/refresh.webp",
     links: {
       linkedin: "https://www.linkedin.com/pulse/refresh-button-does-really-speed-your-device-mohammad-ahmad-5hgef/?trackingId=G7LZBQ0BScqA83ZgTf6WzA%3D%3D",
       medium: "https://medium.com/@MohammadAh2002/the-refresh-button-and-does-it-really-speed-up-your-device-4a43397edafe",
@@ -537,7 +537,7 @@ export const articles = [
     title: "Book Review: But How Do It Know?",
     excerpt: "A review of the book 'But How Do It Know?' by J. Clark Scott.",
     readTime: "4 min read",
-    image: "/Images/HowdoitKnow.webp",
+    image: "./Images/HowdoitKnow.webp",
     links: {
       medium: "https://medium.com/@MohammadAh2002/book-review-but-how-do-it-know-40827b575b36",
     },
@@ -547,7 +547,7 @@ export const articles = [
     title: "What is Metadata?!",
     excerpt: "Understanding what metadata is and why it matters.",
     readTime: "2 min read",
-    image: "/Images/metadata.webp",
+    image: "./Images/metadata.webp",
     links: {
       medium: "https://medium.com/@MohammadAh2002/what-is-metadata-4a43397edafe",
     },
@@ -557,7 +557,7 @@ export const articles = [
     title: "Syntax vs Semantics in Programming",
     excerpt: "Understanding the difference between syntax and semantics in programming.",
     readTime: "4 min read",
-    image: "/Images/svs.webp",
+    image: "./Images/svs.webp",
     links: {
       linkedin: "https://www.linkedin.com/pulse/syntax-vs-semantics-mohammad-ahmad-unbnf/?trackingId=G7LZBQ0BScqA83ZgTf6WzA%3D%3D",
       medium: "https://medium.com/@MohammadAh2002/syntax-vs-semantics-in-programming-b1b5aa7b283e",
@@ -568,7 +568,7 @@ export const articles = [
     title: "Types of Learning for Programmers",
     excerpt: "Exploratory vs. As-Needed Learning: Two Ways to Learn as a Programmer.",
     readTime: "2 min read",
-    image: "/Images/learn.webp",
+    image: "./Images/learn.webp",
     links: {
       medium: "https://medium.com/@MohammadAh2002/types-of-learning-for-programmers-55b3ddb14968",
     },

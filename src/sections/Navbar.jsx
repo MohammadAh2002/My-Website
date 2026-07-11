@@ -29,7 +29,7 @@ export default function Navbar() {
           : "border-b border-transparent bg-transparent"
       )}
     >
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+      <nav className="mx-auto flex max-w-6xl flex-nowrap items-center justify-between px-4 py-3 md:px-6">
         {/* Logo */}
         <a
           href="#hero"
@@ -42,7 +42,7 @@ export default function Navbar() {
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden items-center gap-1 lg:flex">
+        <div className="hidden items-center gap-1 xl:flex">
           {navItems.map((item) => (
             <NavLink
               key={item.id}
@@ -68,7 +68,7 @@ export default function Navbar() {
           <button
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 lg:hidden dark:border-slate-700 dark:text-slate-200"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 xl:hidden dark:border-slate-700 dark:text-slate-200"
           >
             <Menu size={20} />
           </button>
@@ -82,7 +82,7 @@ export default function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-lg lg:hidden"
+            className="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-lg xl:hidden"
           >
             <div className="flex items-center justify-between px-4 py-3">
               <span className="font-mono text-lg font-bold text-slate-100">

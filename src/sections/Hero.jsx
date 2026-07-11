@@ -108,7 +108,7 @@ export default function Hero() {
         >
           <div className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-2xl shadow-accent/10 dark:border-slate-800">
             <img
-              src="/Images/MyImage.png"
+              src="./Images/MyImage.png"
               alt={profile.name}
               className="h-full w-full max-w-md object-cover"
             />

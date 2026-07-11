@@ -84,7 +84,27 @@ shows loading/success states. To send real emails later, wire `handleSubmit` in
 
 `vite.config.js` uses `base: "./"` so the build works from any path.
 
-### Option A — Automatic (GitHub Actions, recommended)
+### Option A — Manual (`gh-pages` branch, recommended)
+
+This uses zero GitHub Actions minutes because everything happens from your machine.
+
+1. Build the site:
+
+   ```bash
+   npm run build
+   ```
+
+2. Push the generated `dist/` folder to the `gh-pages` branch:
+
+   ```bash
+   npm run deploy
+   ```
+
+3. In your repo: **Settings → Pages → Source = Deploy from a branch → gh-pages / (root)**.
+
+Repeat steps 1–2 whenever you want to update the live site.
+
+### Option B — Automatic (GitHub Actions)
 
 A workflow is included at `.github/workflows/deploy.yml`.
 
@@ -92,14 +112,7 @@ A workflow is included at `.github/workflows/deploy.yml`.
 2. In your repo: **Settings → Pages → Build and deployment → Source = GitHub Actions**.
 3. Every push to `main` builds and deploys automatically.
 
-### Option B — Manual (`gh-pages` branch)
-
-```bash
-npm run build
-npm run deploy   # publishes dist/ to the gh-pages branch
-```
-
-Then set **Settings → Pages → Source = Deploy from a branch → gh-pages / (root)**.
+This uses a small amount of GitHub Actions compute time.
 
 ## Other Hosts (Netlify / Vercel)
 
