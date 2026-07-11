@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode (Tailwind v4) so <html class="dark"> works */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-accent: #76b5ba;
+  --color-accent-hover: #5a9fa3;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+:root {
+  --accent: #76b5ba;
+  --accent-hover: #5a9fa3;
+}
+
+/* ── Dark mode color overrides ── */
+/* Only override background/border slates; keep text slates at Tailwind defaults */
+.dark {
+  --color-slate-700: #2a3142;
+  --color-slate-800: #1e2533;
+  --color-slate-900: #151b27;
+  --color-slate-950: #0d111b;
+  --color-accent: #8dccd2;
+  --color-accent-hover: #76b5ba;
+  --accent: #8dccd2;
+  --accent-hover: #76b5ba;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle gradient background in dark mode for depth */
+.dark body {
+  background-color: #0d111b;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(141, 204, 210, 0.06), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 100%, rgba(141, 204, 210, 0.04), transparent);
+  background-attachment: fixed;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #76b5ba66;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #76b5ba;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #8dccd266;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #8dccd2;
+}
+
+/* Hide scrollbar for horizontal snap tracks */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Focus ring for accessibility */
+:focus-visible {
+  outline: 2px solid #76b5ba;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
