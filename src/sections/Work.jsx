@@ -44,7 +44,7 @@ export default function Work() {
                 <img
                   src={selected.image}
                   alt={selected.title}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-cover object-center"
                   loading="lazy"
                 />
               </div>

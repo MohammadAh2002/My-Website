@@ -10,7 +10,7 @@ export default function WorkProjectCard({ project, onOpen }) {
           <img
             src={project.image}
             alt={project.title}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 to-transparent" />

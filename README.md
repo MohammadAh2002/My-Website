@@ -29,18 +29,10 @@ All text/content lives in a single source of truth:
 src/data/portfolio.js
 ```
 
-Update `profile`, `skills`, `experiences`, `education`, `freelanceProjects`,
-`projects`, `repositories`, `openSource`, `articles`, `contact`, and `footer`
+Update `profile`, `skills`, `experiences`, `education`, `workProjects`,
+`projects`, `openSource`, `articles`, `contact`, and `footer`
 there — the components read everything from this file. No content is hardcoded
 inside components.
-
-### Placeholders to replace
-
-Some entries contain `REPLACE WITH ...` placeholders. Update these with your real data:
-
-- `education` → your degree/university and a real certification.
-- `articles` → your real Medium/LinkedIn article titles, excerpts, dates.
-- `profile.resumeUrl` → drop a `resume.pdf` in `public/` and set this to `"./resume.pdf"`.
 
 ## Project Structure
 
@@ -51,7 +43,7 @@ src/
 ├── index.css           # Tailwind + global styles
 ├── data/portfolio.js   # ALL content lives here
 ├── context/            # ThemeContext
-├── hooks/              # useTheme, useScrollSpy, useMediaQuery
+├── hooks/              # useTheme, useScrollSpy
 ├── lib/                # utils (cn, copy, formatDate) + icon map
 ├── components/         # reusable UI (Card, Modal, Button, Badge, ...)
 └── sections/           # page sections (Hero, About, Skills, ...)
@@ -65,20 +57,19 @@ src/
 - Skills with category tabs, animated proficiency bars, and detail modals
 - Experience vertical timeline with a line that draws down on scroll
 - Education/Certifications/Courses grid with detail modals
-- Freelance case-study cards (problem → solution → result) with modals
+- Professional work case-study cards (problem → solution → result) with modals
 - Projects grid with category filters and detail modals
-- Horizontally scrolling GitHub repos + open-source card
+- Open-source contributions card
 - Horizontally scrolling articles track (snap scrolling)
-- Contact section with copy-to-clipboard info + validated (simulated) form
+- Contact section with copy-to-clipboard info + validated form (Formspree integration)
 - Reading progress bar, back-to-top button, dark/light toggle
 - `prefers-reduced-motion` support and keyboard/focus accessibility
 
 ## Contact Form
 
-The form uses **simulated submission** (no backend) — it validates input and
-shows loading/success states. To send real emails later, wire `handleSubmit` in
-`src/components/ContactForm.jsx` to a service like
-[Formspree](https://formspree.io/) or [EmailJS](https://www.emailjs.com/).
+The form is wired to [Formspree](https://formspree.io/) for real email delivery.
+It validates input client-side and shows loading/success/error states.
+The endpoint is configured in `src/components/ContactForm.jsx`.
 
 ## Deployment — GitHub Pages
 
@@ -103,16 +94,6 @@ This uses zero GitHub Actions minutes because everything happens from your machi
 3. In your repo: **Settings → Pages → Source = Deploy from a branch → gh-pages / (root)**.
 
 Repeat steps 1–2 whenever you want to update the live site.
-
-### Option B — Automatic (GitHub Actions)
-
-A workflow is included at `.github/workflows/deploy.yml`.
-
-1. Push this repo to GitHub (branch `main`).
-2. In your repo: **Settings → Pages → Build and deployment → Source = GitHub Actions**.
-3. Every push to `main` builds and deploys automatically.
-
-This uses a small amount of GitHub Actions compute time.
 
 ## Other Hosts (Netlify / Vercel)
 

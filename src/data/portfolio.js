@@ -304,7 +304,7 @@ export const workProjects = [
   {
     id: "clinic-management-system",
     title: "Clinic Management System",
-    image: "./Images/clinic-management-system.png",
+    image: "./Images/RayhanImage.PNG",
     client: "Healthcare Client",
     period: "2026",
     shortDescription:
@@ -346,7 +346,7 @@ export const workProjects = [
   {
     id: "wellness-platform",
     title: "Wellness Platform Website",
-    image: "./Images/wellness-platform.png",
+    image: "./Images/RoaaImage.PNG",
     client: "Wellness Client",
     period: "2025",
     shortDescription:
@@ -518,7 +518,7 @@ export const articles = [
     image: "./Images/FilesComparestion.webp",
     links: {
       linkedin: "https://www.linkedin.com/pulse/art-making-big-data-small-mohammad-ahmad-ody8f/?trackingId=G7LZBQ0BScqA83ZgTf6WzA%3D%3D",
-      medium: "https://medium.com/@MohammadAh2002/file-compression-the-art-of-making-big-data-small-8b8b8b8b8b8b",
+      medium: "https://medium.com/@MohammadAh2002/file-compression-the-art-of-making-big-data-small-a3b2e20855a0",
     },
   },
   {
