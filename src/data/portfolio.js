@@ -16,7 +16,7 @@ export const profile = {
   email: "mohammadahmadwork@gmail.com",
   phone: "+972 0543812415",
   location: "Jerusalem",
-  resumeUrl: "./Mohammad-Ahmad-CV.pdf",
+  resumeUrl: "/Mohammad-Ahmad-CV.pdf",
   socials: {
     linkedin: "https://www.linkedin.com/in/mohammadah2002/",
     github: "https://github.com/MohammadAh2002",
