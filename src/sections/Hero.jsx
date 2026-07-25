@@ -89,7 +89,7 @@ export default function Hero() {
 
           <motion.div variants={line} className="mt-8 flex flex-wrap gap-3">
             <Button href="#contact">Get in touch</Button>
-            <Button href="#projects" variant="outline">
+            <Button href="#work" variant="outline">
               View my work
             </Button>
           </motion.div>
