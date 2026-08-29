@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
-import { Languages, Sparkles, Heart, User } from "lucide-react";
-import { profile } from "../data/portfolio";
+import { Languages, Sparkles, Award, User, ExternalLink } from "lucide-react";
+import { profile, certifications } from "../data/portfolio";
 import SectionHeader from "../components/SectionHeader";
 import ScrollReveal from "../components/ScrollReveal";
 import Badge from "../components/Badge";
@@ -60,7 +60,7 @@ export default function About() {
                 <User size={24} />
               </div>
               <h3 className="mb-4 text-xl font-semibold text-slate-900 dark:text-slate-100">
-                {profile.role} based in {profile.location}
+                {profile.role}
               </h3>
               <div className="mb-4">
                 <AboutParagraphs paragraphs={profile.about} />
@@ -110,16 +110,31 @@ export default function About() {
           <ScrollReveal delay={0.2}>
             <div className="rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
               <p className="mb-4 flex items-center gap-2 font-semibold text-slate-900 dark:text-slate-100">
-                <Heart size={18} className="text-accent" /> Interests
+                <Award size={18} className="text-accent" /> Certifications
               </p>
-              <ul className="space-y-2">
-                {profile.interests.map((interest) => (
-                  <li
-                    key={interest}
-                    className="flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400"
-                  >
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                    {interest}
+              <ul className="space-y-3">
+                {certifications.map((cert) => (
+                  <li key={cert.id}>
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex items-start gap-2 text-sm text-slate-600 dark:text-slate-400"
+                    >
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                      <span className="flex-1">
+                        <span className="font-medium text-slate-800 dark:text-slate-200">
+                          {cert.title}
+                        </span>
+                        <span className="block text-xs text-slate-500">
+                          {cert.institution} · {cert.period}
+                        </span>
+                      </span>
+                      <ExternalLink
+                        size={14}
+                        className="mt-0.5 shrink-0 text-slate-400 transition-colors group-hover:text-accent"
+                      />
+                    </a>
                   </li>
                 ))}
               </ul>

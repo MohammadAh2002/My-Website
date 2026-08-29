@@ -10,7 +10,7 @@ export const profile = {
     "Over the past few years, I've built and delivered production systems used by real businesses, working directly with clients to understand their needs and transform them into practical, scalable solutions. Taking ownership of an entire project has taught me how to balance technical decisions with real-world requirements, adapt to changing priorities, and deliver software that provides long-term value.",
     "My primary interest is backend engineering. I enjoy designing APIs, modeling databases, improving performance, and building systems that are reliable, maintainable, and able to grow over time. I'm particularly interested in distributed systems, cloud technologies, and the engineering challenges involved in building scalable software.",
     "Beyond application development, I'm fascinated by the technologies that power modern software. I enjoy learning how web servers, database engines, distributed platforms, and other core technologies work internally because understanding the underlying systems helps me become a better engineer and make stronger architectural decisions.",
-    "I'm a strong believer in continuous learning. Whether it's exploring new technologies, contributing to open-source projects, or challenging myself with complex engineering problems, I'm always looking for opportunities to improve my skills and deepen my understanding of software engineering.",
+    "I'm a strong believer in continuous learning. I'm AWS Certified Cloud Practitioner, Microsoft Certified: Azure Fundamentals (AZ-900), and GitHub Foundations certified, and I'm always exploring new technologies, contributing to open-source projects, or challenging myself with complex engineering problems to improve my skills and deepen my understanding of software engineering.",
     "I'm currently seeking opportunities where I can contribute as a Backend or Software Engineer, collaborate with experienced teams, and continue growing in backend engineering, cloud computing, and scalable system design while building software that makes a meaningful impact.",
   ],
   email: "mohammadahmadwork@gmail.com",
@@ -193,6 +193,46 @@ export const experiences = [
       "Applied clean code, OOP, and SOLID principles",
     ],
   },
+  {
+    id: "professional-certifications",
+    title: "Professional Certifications",
+    company: "AWS · Microsoft · GitHub",
+    period: "2025 - Present",
+    description:
+      "Earned industry-recognized certifications validating cloud computing, DevOps, and modern software development workflows. These credentials back my hands-on backend and cloud work with verified foundational expertise across the three platforms I use most.",
+    highlights: [
+      "AWS Certified Cloud Practitioner (2026)",
+      "Microsoft Certified: Azure Fundamentals AZ-900 (2026)",
+      "GitHub Foundations Certification (2025)",
+    ],
+  },
+];
+
+export const certifications = [
+  {
+    id: "aws-cloud-practitioner",
+    title: "AWS Certified Cloud Practitioner",
+    institution: "Amazon Web Services",
+    period: "2026",
+    credentialId: "7f531b320d11453a832d168a982d6aed",
+    link: "https://www.credly.com/badges/829c1936-9236-49ff-8a2c-8c7f885b76df/public_url",
+  },
+  {
+    id: "azure-fundamentals",
+    title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    institution: "Microsoft",
+    period: "2026",
+    credentialId: "C536FDD4991986C",
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/MohammadAhmad-3073/C536FDD4991986C?sharingId=8280091A0850454F",
+  },
+  {
+    id: "github-foundations",
+    title: "GitHub Foundations Certification",
+    institution: "GitHub",
+    period: "2025",
+    credentialId: "8DF4515BA472829A",
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/MohammadAhmad-3073/8DF4515BA472829A?sharingId=8280091A0850454F",
+  },
 ];
 
 export const education = [
@@ -212,24 +252,6 @@ export const education = [
     link: "#",
   },
   {
-    id: "aws-restart",
-    type: "Course",
-    title: "AWS re/Start - Cloud Practitioner Training",
-    institution: "Amazon Web Services",
-    period: "2026",
-    description:
-      "Completed the AWS re/Start cloud training program, a hands-on career development program focused on building foundational skills in cloud computing and IT infrastructure. The program covered AWS core services, Linux fundamentals, networking, Python scripting, security concepts, and cloud operations. Gained practical experience working with AWS services including compute, storage, databases, networking, identity management, monitoring, and infrastructure automation. Developed hands-on skills through lab exercises involving cloud environments, troubleshooting, scripting, and applying AWS best practices, including the AWS Shared Responsibility Model, Global Infrastructure, and cloud cost management concepts.",
-    highlights: [
-      "AWS core services: EC2, S3, RDS, VPC, IAM, Lambda, CloudWatch, CloudFormation",
-      "Linux fundamentals and command-line operations",
-      "Bash & Python scripting and automation basics",
-      "Networking fundamentals and cloud architecture concepts",
-      "Security, identity, and access management",
-      "Cloud operations, troubleshooting, and best practices",
-    ],
-    link: "#",
-  },
-  {
     id: "aws-cloud-practitioner",
     type: "Certification",
     title: "AWS Certified Cloud Practitioner",
@@ -243,9 +265,31 @@ export const education = [
       "Pricing, billing, and cost management",
       "AWS Global Infrastructure and availability concepts",
       "Identity and access management (IAM) and security fundamentals",
-      "Monitoring, reliability, and operational best practices",      
+      "Monitoring, reliability, and operational best practices",
     ],
-    link: "#",
+    image: "./Images/AWS%20Certified%20Cloud%20Practitioner%20certificate_page-0001.jpg",
+    credentialId: "7f531b320d11453a832d168a982d6aed",
+    link: "https://www.credly.com/badges/829c1936-9236-49ff-8a2c-8c7f885b76df/public_url",
+  },
+  {
+    id: "azure-fundamentals",
+    type: "Certification",
+    title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+    institution: "Microsoft",
+    period: "2026",
+    description:
+      "Earned the Microsoft Azure Fundamentals (AZ-900) certification, demonstrating a foundational understanding of cloud computing concepts and the Microsoft Azure platform. The certification covers cloud concepts, core Azure services, Azure management and governance, and security, privacy, compliance, and trust, along with the ability to describe core Azure architectural components and Azure pricing, subscriptions, and cost management.",
+    highlights: [
+      "Cloud concepts: IaaS, PaaS, SaaS, and public/private/hybrid cloud models",
+      "Core Azure services: compute, networking, storage, and databases",
+      "Azure management and governance tools",
+      "Security, privacy, compliance, and trust in Azure",
+      "Azure pricing, subscriptions, and cost management",
+      "Identity, governance, and compliance fundamentals",
+    ],
+    image: "./Images/Azur%20Cert.jpg",
+    credentialId: "C536FDD4991986C",
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/MohammadAhmad-3073/C536FDD4991986C?sharingId=8280091A0850454F",
   },
   {
     id: "github-foundations",
@@ -261,6 +305,26 @@ export const education = [
       "GitHub Actions and CI/CD fundamentals",
       "Repository management and project workflows",
       "Security and software development best practices",
+    ],
+    image: "./Images/GitHub%20Cert.jpg",
+    credentialId: "8DF4515BA472829A",
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/MohammadAhmad-3073/8DF4515BA472829A?sharingId=8280091A0850454F",
+  },
+  {
+    id: "aws-restart",
+    type: "Course",
+    title: "AWS re/Start - Cloud Practitioner Training",
+    institution: "Amazon Web Services",
+    period: "2026",
+    description:
+      "Completed the AWS re/Start cloud training program, a hands-on career development program focused on building foundational skills in cloud computing and IT infrastructure. The program covered AWS core services, Linux fundamentals, networking, Python scripting, security concepts, and cloud operations. Gained practical experience working with AWS services including compute, storage, databases, networking, identity management, monitoring, and infrastructure automation. Developed hands-on skills through lab exercises involving cloud environments, troubleshooting, scripting, and applying AWS best practices, including the AWS Shared Responsibility Model, Global Infrastructure, and cloud cost management concepts.",
+    highlights: [
+      "AWS core services: EC2, S3, RDS, VPC, IAM, Lambda, CloudWatch, CloudFormation",
+      "Linux fundamentals and command-line operations",
+      "Bash & Python scripting and automation basics",
+      "Networking fundamentals and cloud architecture concepts",
+      "Security, identity, and access management",
+      "Cloud operations, troubleshooting, and best practices",
     ],
     link: "#",
   },

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Mail, MapPin, Globe } from "lucide-react";
-import { profile } from "../data/portfolio";
+import { ArrowDown, Mail, MapPin, Award } from "lucide-react";
+import { profile, certifications } from "../data/portfolio";
 import Button from "../components/Button";
 import SocialLinks from "../components/SocialLinks";
 
@@ -74,7 +74,7 @@ export default function Hero() {
 
           <motion.div
             variants={line}
-            className="mt-6 flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400"
+            className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-slate-500 dark:text-slate-400"
           >
             <span className="flex items-center gap-1.5">
               <MapPin size={16} className="text-accent" /> {profile.location}
@@ -82,9 +82,26 @@ export default function Hero() {
             <span className="flex items-center gap-1.5">
               <Mail size={16} className="text-accent" /> Available for work
             </span>
-            <span className="flex items-center gap-1.5">
-              <Globe size={16} className="text-accent" /> Available to work remotely
+          </motion.div>
+
+          <motion.div
+            variants={line}
+            className="mt-4 flex flex-wrap items-center gap-2"
+          >
+            <span className="flex items-center gap-1.5 text-sm font-medium text-slate-600 dark:text-slate-300">
+              <Award size={16} className="text-accent" /> Certified
             </span>
+            {certifications.map((cert) => (
+              <a
+                key={cert.id}
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-accent/30 bg-accent/[0.06] px-3 py-1 text-xs font-medium text-accent transition-colors hover:border-accent hover:bg-accent/15"
+              >
+                {cert.title}
+              </a>
+            ))}
           </motion.div>
 
           <motion.div variants={line} className="mt-8 flex flex-wrap gap-3">
