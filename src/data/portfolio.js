@@ -2,16 +2,13 @@ export const profile = {
   name: "Mohammad Ahmad",
   shortName: "Mohammad",
   role: "Software Engineer",
-  tagline: "Backend, Web & Mobile Development",
   summary:
-    "Software Engineer with a B.Sc. in Information Systems Engineering and hands-on experience building production systems used by real businesses. I focus on backend engineering, designing reliable APIs, modeling databases, and building scalable software that solves real engineering problems. Interested in distributed systems, cloud technologies, and the internals of modern software infrastructure. Currently seeking opportunities as a Backend or Software Engineer.",
+    "Software Engineer with a B.Sc. in Information Systems Engineering and hands-on experience designing, developing, testing, and deploying software for real-world applications. Experienced across application development, APIs, databases, cloud infrastructure, and system design, with interests in software architecture, distributed systems, and the technologies that power modern software.",
   about: [
-    "I'm a Software Engineer with a B.Sc. in Information Systems Engineering who enjoys designing reliable backend systems and turning ideas into production-ready software. I enjoy solving real engineering problems, from understanding business requirements and designing system architecture to building, deploying, and maintaining software that people rely on every day.",
-    "Over the past few years, I've built and delivered production systems used by real businesses, working directly with clients to understand their needs and transform them into practical, scalable solutions. Taking ownership of an entire project has taught me how to balance technical decisions with real-world requirements, adapt to changing priorities, and deliver software that provides long-term value.",
-    "My primary interest is backend engineering. I enjoy designing APIs, modeling databases, improving performance, and building systems that are reliable, maintainable, and able to grow over time. I'm particularly interested in distributed systems, cloud technologies, and the engineering challenges involved in building scalable software.",
-    "Beyond application development, I'm fascinated by the technologies that power modern software. I enjoy learning how web servers, database engines, distributed platforms, and other core technologies work internally because understanding the underlying systems helps me become a better engineer and make stronger architectural decisions.",
-    "I'm a strong believer in continuous learning. I'm AWS Certified Cloud Practitioner, Microsoft Certified: Azure Fundamentals (AZ-900), and GitHub Foundations certified, and I'm always exploring new technologies, contributing to open-source projects, or challenging myself with complex engineering problems to improve my skills and deepen my understanding of software engineering.",
-    "I'm currently seeking opportunities where I can contribute as a Backend or Software Engineer, collaborate with experienced teams, and continue growing in backend engineering, cloud computing, and scalable system design while building software that makes a meaningful impact.",
+    "I'm a Software Engineer with a B.Sc. in Information Systems Engineering and hands-on experience delivering software from requirements gathering and system design to development, testing, and deployment.",
+    "I've worked on client projects, personal software projects, and open-source contributions across different areas of software development. My experience includes application architecture, databases, APIs, cloud infrastructure, and software testing.",
+    "Beyond application development, I'm interested in how software works internally, including web servers, database engines, operating systems, and distributed systems. I also explore AI agents and modern development tools to improve my engineering workflow.",
+    "I'm currently seeking Software Engineer opportunities where I can contribute to real-world products, solve technical problems, and continue growing as an engineer.",
   ],
   email: "mohammadahmadwork@gmail.com",
   phone: "+972 0543812415",
@@ -36,12 +33,11 @@ export const profile = {
     "Sharing Knowledge & Writing Technical Articles",
   ],
   currentlyLearning: [
-    "Mobile Development",
-    "Web Development",
-    "Back-End Engineering",
     "Microservices",
+    "Distributed Systems",
     "DevOps",
     "Cloud",
+    "AI Agents",
   ],
 };
 
@@ -58,6 +54,34 @@ export const navItems = [
 ];
 
 export const skills = [
+  {
+    category: "Practices",
+    items: [
+      { name: "OOP", icon: "Binary" },
+      { name: "OOD", icon: "Binary" },
+      { name: "SOLID", icon: "Triangle" },
+      { name: "Clean Code", icon: "Sparkles" },
+      { name: "Problem Solving", icon: "Puzzle" },
+      { name: "Data Structures", icon: "Database" },
+      { name: "System Design", icon: "Workflow" },
+      { name: "Agile", icon: "Repeat" },
+    ],
+  },
+  {
+    category: "DevOps / Cloud",
+    items: [
+      { name: "Git", icon: "GitBranch" },
+      { name: "GitHub", icon: "Github" },
+      { name: "AWS", icon: "Cloud" },
+      { name: "GCP", icon: "Cloud" },
+      { name: "Linux", icon: "Terminal" },
+      { name: "Bash", icon: "Terminal" },
+      { name: "Docker", icon: "Container" },
+      { name: "Kubernetes", icon: "Ship" },
+      { name: "CI/CD", icon: "RefreshCw" },
+      { name: "Python", icon: "FileCode" },
+    ],
+  },
   {
     category: "Backend",
     items: [
@@ -104,34 +128,6 @@ export const skills = [
     ],
   },
   {
-    category: "DevOps / Cloud",
-    items: [
-      { name: "Git", icon: "GitBranch" },
-      { name: "GitHub", icon: "Github" },
-      { name: "AWS", icon: "Cloud" },
-      { name: "GCP", icon: "Cloud" },
-      { name: "Linux", icon: "Terminal" },
-      { name: "Bash", icon: "Terminal" },
-      { name: "Docker", icon: "Container" },
-      { name: "Kubernetes", icon: "Ship" },
-      { name: "CI/CD", icon: "RefreshCw" },
-      { name: "Python", icon: "FileCode" },
-    ],
-  },
-  {
-    category: "Practices",
-    items: [
-      { name: "OOP", icon: "Binary" },
-      { name: "OOD", icon: "Binary" },
-      { name: "SOLID", icon: "Triangle" },
-      { name: "Clean Code", icon: "Sparkles" },
-      { name: "Problem Solving", icon: "Puzzle" },
-      { name: "Data Structures", icon: "Database" },
-      { name: "System Design", icon: "Workflow" },
-      { name: "Agile", icon: "Repeat" },
-    ],
-  },
-  {
     category: "Soft Skills",
     items: [
       { name: "Communication", icon: "MessageCircle" },
@@ -152,58 +148,14 @@ export const experiences = [
     id: "software-engineer",
     title: "Software Engineer",
     company: "Self-employed",
-    period: "Sep 2025 - Present",
-    description:
-      "Worked as a software engineer, building and delivering full-stack web and mobile applications for real users, focused on performance, scalability, and reliability. Worked directly with clients to define business requirements, design system logic, and translate needs into practical technical solutions. Built systems for real-world workflows such as e-commerce, serving hundreds of active users with stable performance under real usage conditions. Optimized workflows to make operations faster, more reliable, and easier to manage.",
-    highlights: [
-      "Delivered full-stack web and mobile applications for real users",
-      "Collaborated directly with clients to define requirements and design system logic",
-      "Built systems serving hundreds of active users with stable, reliable performance",
-      "Built backend services and APIs using C# and .NET",
-      "Worked with Firebase and Google Cloud Platform for backend infrastructure and services",
-      "Integrated with third-party APIs including SMS API to send messages directly from code",
-      "Improved workflows to make operations faster, more reliable, and easier to manage",
-      "Tech stack: JavaScript, React, Flutter, C#, .NET, REST APIs, SQL, Firebase, AWS, GCP, Git/GitHub.",
-    ],
-  },
-  {
-    id: "opensource",
-    title: "Open-Source Contributor",
-    company: "Community Projects",
-    period: "Ongoing",
-    description:
-      "Contributed to open-source projects by adding features, fixing bugs, improving documentation, and expanding functionality. Collaborated with maintainers and the community to enhance project quality and usability.",
-    highlights: [
-      "Added features and expanded library functionality",
-      "Fixed bugs and improved project documentation",
-      "Collaborated with maintainers to enhance usability",
-    ],
-  },
-  {
-    id: "backend-dev",
-    title: "Software Developer",
-    company: "Personal & Collaborative Projects",
-    period: "Ongoing",
-    description:
-      "Built a variety of software projects including web applications, mobile apps, backend services, and background services such as web servers and Windows services. Designed relational database schemas, implemented data access layers, and integrated authentication and authorization. Applied clean code, OOP, and SOLID principles across all projects.",
-    highlights: [
-      "Built web applications, mobile apps, and backend services",
-      "Designed relational database schemas and data access layers",
-      "Built secure authentication and authorization flows",
-      "Applied clean code, OOP, and SOLID principles",
-    ],
-  },
-  {
-    id: "professional-certifications",
-    title: "Professional Certifications",
-    company: "AWS · Microsoft · GitHub",
     period: "2025 - Present",
     description:
-      "Earned industry-recognized certifications validating cloud computing, DevOps, and modern software development workflows. These credentials back my hands-on backend and cloud work with verified foundational expertise across the three platforms I use most.",
+      "Delivered end-to-end software for real clients, from requirements gathering and system design to development, testing, and deployment.",
     highlights: [
-      "AWS Certified Cloud Practitioner (2026)",
-      "Microsoft Certified: Azure Fundamentals AZ-900 (2026)",
-      "GitHub Foundations Certification (2025)",
+      "Software Development: Designed, developed, tested, and deployed software solutions based on real-world requirements",
+      "System Design & Problem-Solving: Translated business needs into technical designs and implemented maintainable solutions",
+      "Technologies & Integrations: Worked with programming languages, databases, cloud platforms, APIs, and external services",
+      "Engineering Practices: Applied testing, debugging, version control, and AI-assisted development tools throughout the development lifecycle",
     ],
   },
 ];
@@ -365,6 +317,48 @@ export const education = [
 ];
 
 export const workProjects = [
+  {
+    id: "eastech-rooms-reservation",
+    title: "EasTech Rooms Reservation System",
+    image: "./Images/EasTech%20logo.png",
+    client: "EasTech",
+    period: "2026",
+    shortDescription:
+      "A centralized room-booking platform for EasTech administrators and partner organizations, replacing spreadsheet-based reservations with conflict-aware scheduling.",
+    fullDescription:
+      "Worked as a developer with the EasTech team to gather requirements and build an internal room reservation system for administrators and partner organizations. The platform replaces the Excel-based process with centralized room availability, booking, and administration workflows. I built the React and TypeScript application with Firebase, and added Python AWS Lambda functions for user management and email notifications using the Gmail API. Because the system is internal, it does not have a public demo.",
+    problem:
+      "Room reservations were coordinated through Excel, requiring manual follow-ups and making it harder to keep availability accurate across administrators and partner organizations.",
+    solution:
+      "Created a centralized reservation system with transactional booking logic to handle overlapping and concurrent requests while maintaining accurate room availability.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase Authentication",
+      "Cloud Firestore",
+      "AWS Lambda (Python)",
+      "Gmail API",
+      "Google OAuth 2.0",
+      "Docker",
+      "Vitest",
+      "Firebase Emulator Suite",
+      "Firebase Hosting",
+    ],
+    features: [
+      "Calendar-based room availability and reservation creation",
+      "Conflict detection for overlapping bookings and related rooms",
+      "Weekly recurring reservations with transactional consistency",
+      "Admin and partner pages with role-based access for managing reservations, rooms, and users",
+      "Users set and reset their own passwords via email",
+      "Python AWS Lambda user-management operations",
+      "Automated welcome, confirmation, and cancellation emails",
+      "Calendar invitations with .ics attachments and HTML emails",
+      "Unit and integration tests",
+    ],
+    result:
+      "Replaced spreadsheet-based room booking with a centralized system, reducing manual coordination and protecting reservation consistency during concurrent booking requests.",
+  },
   {
     id: "clinic-management-system",
     title: "Clinic Management System",

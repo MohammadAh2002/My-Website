@@ -60,13 +60,6 @@ export default function Hero() {
 
           <motion.p
             variants={line}
-            className="mt-2 font-mono text-sm text-slate-500 dark:text-slate-400"
-          >
-            {profile.tagline}
-          </motion.p>
-
-          <motion.p
-            variants={line}
             className="mt-6 max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-400"
           >
             {profile.summary}

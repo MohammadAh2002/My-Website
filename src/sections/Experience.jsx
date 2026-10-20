@@ -20,7 +20,7 @@ export default function Experience() {
       <SectionHeader
         eyebrow="My journey"
         title="Experience"
-        subtitle="Roles and contributions across open-source and personal work."
+        subtitle="Delivering end-to-end software for real clients and real users."
       />
 
       <div ref={containerRef} className="relative">
