@@ -3,11 +3,11 @@ export const profile = {
   shortName: "Mohammad",
   role: "Software Engineer",
   summary:
-    "Software Engineer with a B.Sc. in Information Systems Engineering and hands-on experience designing, developing, testing, and deploying software for real-world applications. Experienced across application development, APIs, databases, cloud infrastructure, and system design, with interests in software architecture, distributed systems, and the technologies that power modern software.",
+    "Software Engineer with a B.Sc. in Information Systems Engineering and hands-on experience designing, developing, and delivering end-to-end software solutions for clients. Covers the full software development lifecycle — requirements gathering, system design, backend development, database design, API integrations, testing, deployment, and production maintenance — with systems serving tens of users daily across different platforms.",
   about: [
-    "I'm a Software Engineer with a B.Sc. in Information Systems Engineering and hands-on experience delivering software from requirements gathering and system design to development, testing, and deployment.",
-    "I've worked on client projects, personal software projects, and open-source contributions across different areas of software development. My experience includes application architecture, databases, APIs, cloud infrastructure, and software testing.",
-    "Beyond application development, I'm interested in how software works internally, including web servers, database engines, operating systems, and distributed systems. I also explore AI agents and modern development tools to improve my engineering workflow.",
+    "I'm a Software Engineer with a B.Sc. in Information Systems Engineering and hands-on experience designing, developing, and delivering end-to-end software solutions for clients, covering the full software development lifecycle from requirements gathering and system design to backend development, database design, API integrations, testing, deployment, and production maintenance.",
+    "I'm certified in AWS Cloud Practitioner, Microsoft Azure Fundamentals (AZ-900), and GitHub Foundations. I've worked on real-world client projects, personal software projects, and open-source contributions across different areas of software development, with experience in C#, .NET, C++, Java, Python, JavaScript, TypeScript, Rust, React, Flutter, SQL and NoSQL databases, cloud platforms, REST APIs, and Docker.",
+    "Beyond application development, I'm particularly interested in understanding how software works internally, including web servers, database engines, operating systems, networking, and distributed systems. I also explore AI agents, MCP, and modern AI-assisted development tools to improve engineering workflows while maintaining a strong focus on understanding the code and technical decisions behind the solutions I build.",
     "I'm currently seeking Software Engineer opportunities where I can contribute to real-world products, solve technical problems, and continue growing as an engineer.",
   ],
   email: "mohammadahmadwork@gmail.com",
@@ -150,12 +150,17 @@ export const experiences = [
     company: "Self-employed",
     period: "2025 - Present",
     description:
-      "Delivered end-to-end software for real clients, from requirements gathering and system design to development, testing, and deployment.",
+      "Develop and deliver end-to-end software solutions for clients, translating business requirements into production-ready applications. Work directly with clients throughout the software development lifecycle, from requirements gathering and system design to development, testing, deployment, and ongoing maintenance. Delivered systems serving tens of users daily across the platforms.",
     highlights: [
-      "Software Development: Designed, developed, tested, and deployed software solutions based on real-world requirements",
-      "System Design & Problem-Solving: Translated business needs into technical designs and implemented maintainable solutions",
-      "Technologies & Integrations: Worked with programming languages, databases, cloud platforms, APIs, and external services",
-      "Engineering Practices: Applied testing, debugging, version control, and AI-assisted development tools throughout the development lifecycle",
+      "Requirements & Client Collaboration: Work directly with clients to understand business needs, gather requirements, analyze existing workflows, define system functionality, and translate business processes into practical technical solutions",
+      "System Design & Architecture: Design application architecture, structure backend components, model databases, define application logic, and make technical decisions focused on maintainability, reliability, and future development",
+      "Backend & Application Development: Design, develop, and maintain backend services, REST APIs, web applications, and mobile applications. Implement application functionality, data management, authentication, authorization, and business logic",
+      "Business Logic & Workflow Implementation: Develop solutions for real-world business processes, including appointment scheduling, room reservations, product ordering, booking conflict detection, availability management, and administrative workflows",
+      "Database Design & Management: Design database structures, organize application data, implement data access logic, and work with SQL and NoSQL databases, including real-time data synchronization",
+      "Cloud & Third-Party Integrations: Build cloud-backed applications and integrate external services through REST APIs, including authentication providers, email services, SMS providers, and cloud functions",
+      "Testing & Reliability: Test application functionality, write unit and integration tests, troubleshoot bugs, validate business logic, and improve application reliability throughout development",
+      "Deployment & Production Maintenance: Deploy applications and cloud services, configure production environments, maintain existing systems, and adapt implementations to changing client requirements. Refactor existing functionality when necessary while preserving other application features",
+      "AI-Assisted Development: Use AI coding agents, custom skills, and agent workflows to support development tasks",
     ],
   },
 ];
