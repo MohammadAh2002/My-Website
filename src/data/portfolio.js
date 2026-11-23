@@ -175,6 +175,14 @@ export const certifications = [
     link: "https://www.credly.com/badges/829c1936-9236-49ff-8a2c-8c7f885b76df/public_url",
   },
   {
+    id: "aws-ai-practitioner",
+    title: "AWS Certified AI Practitioner",
+    institution: "Amazon Web Services",
+    period: "2026",
+    credentialId: "18c6695468c54aada075538aa232d7fa",
+    link: "https://www.credly.com/badges/18c66954-68c5-4aad-a075-538aa232d7fa/public_url",
+  },
+  {
     id: "azure-fundamentals",
     title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
     institution: "Microsoft",
@@ -227,6 +235,25 @@ export const education = [
     image: "./Images/AWS%20Certified%20Cloud%20Practitioner%20certificate_page-0001.jpg",
     credentialId: "7f531b320d11453a832d168a982d6aed",
     link: "https://www.credly.com/badges/829c1936-9236-49ff-8a2c-8c7f885b76df/public_url",
+  },
+  {
+    id: "aws-ai-practitioner",
+    type: "Certification",
+    title: "AWS Certified AI Practitioner (AIF-C01)",
+    institution: "Amazon Web Services",
+    period: "2026",
+    description:
+      "Earned the AWS Certified AI Practitioner (AIF-C01) certification, demonstrating foundational knowledge of artificial intelligence and machine learning concepts and their applications on AWS. The certification covers AI/ML use cases and business value, foundation models and generative AI, responsible AI practices, model training and deployment workflows, and AWS AI services including Amazon Bedrock and SageMaker, along with the ability to select appropriate AI/ML services for different workloads.",
+    highlights: [
+      "AI and ML concepts, use cases, and business value",
+      "Foundation models and generative AI",
+      "AWS AI services: Amazon Bedrock and SageMaker",
+      "Model training, deployment, and inference workflows",
+      "Responsible AI, security, and compliance",
+    ],
+    image: "./Images/AWS%20Certified%20AI%20Practitioner%20certificate_page-0001.jpg",
+    credentialId: "18c6695468c54aada075538aa232d7fa",
+    link: "https://www.credly.com/badges/18c66954-68c5-4aad-a075-538aa232d7fa/public_url",
   },
   {
     id: "azure-fundamentals",
